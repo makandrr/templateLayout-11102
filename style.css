@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova/Bold/ProximaNova-Bold.eot');
+    src: url('fonts/ProximaNova/Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/Bold/ProximaNova-Bold.woff') format('woff'),
+    url('fonts/ProximaNova/Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova/SemiBold/ProximaNova-Semibold.eot');
+    src: url('fonts/ProximaNova/SemiBold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/SemiBold/ProximaNova-Semibold.woff') format('woff'),
+    url('fonts/ProximaNova/SemiBold/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova/Light/ProximaNova-Light.eot');
+    src: url('fonts/ProximaNova/Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/Light/ProximaNova-Light.woff') format('woff'),
+    url('fonts/ProximaNova/Light/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova/Regular/ProximaNova-Regular.eot');
+    src: url('fonts/ProximaNova/Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova/Regular/ProximaNova-Regular.woff') format('woff'),
+    url('fonts/ProximaNova/Regular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: calc(1vw + 0.1em);
+
+    --f-proxima: 'Proxima Nova', sans-serif;
+}
+
+.container {
+    max-width: 1670px;
+    margin: 0 auto;
+}
+
+/* Header ======================================================================================================= */
+
+.header {
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #fb5700;
+}
+
+.header .logo {
+    height: 2.8em;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header nav .phone {
+    color: #fff;
+    font-family: var(--f-proxima);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-image: url(images/icons/phone.webp);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 1.3em;
+    margin-top: .35em;
+}
+
+.header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: .7em;
+}
+
+.header nav ul li + li {
+    margin-left: 1.6em;
+}
+
+.header nav ul a {
+    font-family: var(--f-proxima);
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: .7em .25em .6em .25em;
+    font-size: 0.9rem;
+    border-bottom: 5px solid transparent;
+}
+
+.header nav ul a:hover {
+    border-bottom: 5px solid #fb5700;
+    color: #fb5700;
+}
+
+.header nav ul a.active {
+    border-bottom: 5px solid #fb5700;
+    color: #fb5700;
+}
+
+/* Banner ================================================================================================= */
+
+.banner {
+    background-image: url(images/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+}
+
+.banner .card {
+    background-color: rgba(23, 199, 235, 0.616);
+    color: #fff;
+    max-width: 50%;
+    padding: 1.5em;
+}
+
+.banner h2 {
+    font-family: var(--f-proxima);
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    max-width: 95%;
+}
+
+.banner p {
+    font-family: var(--f-proxima);
+    font-weight: 600;
+    max-width: 95%;
+    font-size: 1.25rem;
+    margin-top: 1em;
+}
+
+.banner .button {
+    display: inline-block;
+    border: 2px solid #fff;
+    font-family: var(--f-proxima);
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: .6em 1em;
+    margin-top: 2em;
+}
+
+/* Our Services ===================================================================================== */
+
+.services {
+    padding: 2.4em 0;
+}
+
+.services h2 {
+    font-family: var(--f-proxima);
+    font-weight: 300;
+    font-size: 2rem;
+    color: #333333;
+}
+
+.services .columns {
+    display: flex;
+    margin-top: 1.4em;
+    min-height: 22rem;
+}
+
+.services .columns > * {
+    flex: 1;
+}
+
+.services .column + .column {
+    margin-left: 1rem;
+}
+
+.services .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .column > * {
+    flex: 1;
+}
+
+.services .column > .card + .card {
+    margin-top: 1rem;
+}
+
+/* Card colors */
+
+.services .card.yellow {
+    background-color: #feb913;
+}
+
+.services .card.blue {
+    background-color: #329cd6;
+}
+
+.services .card.lime {
+    background-color: #7bbd42;
+}
+
+.services .card.red {
+    background-color: #f05423;
+}
+
+.services .card.pink {
+    background-color: #aa7fc1;
+}
+
+/* End card colors */
+
+.services .card {
+    padding: 1em;
+    color: #fefefe;
+    position: relative;
+}
+
+.services .card h3 {
+    font-family: var(--f-proxima);
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.services .card p {
+    font-family: var(--f-proxima);
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin-top: .5em;
+}
+
+.services .card p + p {
+    margin-top: 1em;
+}
+
+.services .card .icon {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    height: 2.5em;
+}
+
+.services .card .icon.large {
+    height: 3.9em;
+}
+
+.services .card .more {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.services .card .more:hover img {
+    opacity: .8;
+}
+
+.services .card .more img {
+    width: 1.7rem;
+}
+
+/* Subscribe ============================================================================================= */
+
+.subscribe {
+    background-image: url(images/subscribe.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.subscribe .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2.4em 0;
+}
+
+
+.subscribe .main {
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.subscribe h2 {
+    font-family: var(--f-proxima);
+    font-weight: 300;
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.subscribe .form {
+    border: 2px solid #fff;
+    display: flex;
+    width: 80%;
+}
+
+.subscribe .form .input {
+    background-color: rgba(231,231,235,0.5);
+    border: none;
+    padding: .5em;
+    border-right: 2px solid #fff;
+    width: 60%;
+    outline: none;
+    font-weight: 600;
+    font-family: var(--f-proxima);
+    color: #333;
+}
+
+.subscribe .form .input:focus {
+    background-color: rgba(231,231,235,0.8);
+}
+
+.subscribe .form .button {
+    width: 40%;
+    padding: .5em;
+    border: none;
+    background-color: #329cd6;
+    font-family: var(--f-proxima);
+    color: #fff;
+    font-weight: 600;
+}
+
+.subscribe .form .button:hover {
+    background-color: #49aadf;
+}
+
+.subscribe .journal {
+    height: 7.5em;
+}
