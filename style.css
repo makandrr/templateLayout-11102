@@ -46,7 +46,6 @@
 
 :root {
     font-size: calc(1vw + 0.1em);
-
     --f-proxima: 'Proxima Nova', sans-serif;
 }
 
@@ -350,4 +349,130 @@
 
 .subscribe .journal {
     height: 7.5em;
+}
+
+/* Our clients ==================================================================================================== */
+
+.clients {
+    padding: 2.5em 0;
+}
+
+.clients h2 {
+    font-family: var(--f-proxima);
+    font-size: 3rem;
+    font-weight: 300;
+    color: #333333;
+    text-align: center;
+}
+
+.clients .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em;
+    margin-top: 2em;
+}
+
+.clients .logos img {
+    height: 4em;
+}
+
+/* Testimonicals ============================================================================================== */
+
+.testimonials {
+    background-image: url(images/testimonicals.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3em 0 3em 0;
+}
+
+.testimonials h2 {
+    font-family: var(--f-proxima);
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 300;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.testimonials .card {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    margin-top: 3.5em;
+}
+
+.testimonials .card .photo {
+    position: relative;
+    min-height: 14.75rem;
+    background-image: url(images/photo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0 7em;
+    bottom: 1.6em;
+    left: 1.3em;
+}
+
+.testimonials .card .photo .badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    text-align: center;
+    padding: .5em 0;
+}
+
+.testimonials .card .badge h3 {
+    font-family: var(--f-proxima);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.testimonials .card .badge p {
+    font-family: var(--f-proxima);
+    font-weight: 400;
+    font-size: .8rem;
+    color: #000000;
+}
+
+.testimonials .card .quote {
+    background-color: rgba(123,189,65,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.testimonials .card .quote blockquote {
+    font-family: var(--f-proxima);
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #fff;
+    max-width: 80%;
+    text-align: center;
+    line-height: 1.35;
+}
+
+.testimonials .card .quote .control {
+    margin-top: 1em;
+}
+
+.testimonials .card .quote .control img {
+    height: 1.3rem;
+    cursor: pointer;
+}
+
+.testimonials .card .quote .control img:hover {
+    opacity: 0.5;
+}
+
+.testimonials .next {
+    transform: rotate(180deg);
+    margin-left: .9em;
 }
